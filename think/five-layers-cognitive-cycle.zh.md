@@ -86,7 +86,3 @@ Martech AI 的五层不是任意切分，而是把"**数据 → 行动 → 反�
 ```
 
 **Measurement 同时回流到 Intelligence（更新信念）和 Data（产生新的实验事实）。** 这是闭环的本质。一个没有 Measurement 的系统不是 Martech AI 系统，它是单向的发射器。
-
----
-
-*与 [`marketing-agent-classes.md`](marketing-agent-classes.md) 互为姊妹篇。两篇共同支撑 [README](../README.md) 的结构性决策。*

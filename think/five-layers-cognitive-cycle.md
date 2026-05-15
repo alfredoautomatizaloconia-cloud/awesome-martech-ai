@@ -86,7 +86,3 @@ Each layer has its own domain experts, its own KPIs, and its own failure modes. 
 ```
 
 **Measurement flows back to both Intelligence (updating beliefs) and Data (producing new experimental facts).** This is the essence of the closed loop. A system without Measurement is not a Martech AI system — it is a one-way emitter.
-
----
-
-*Companion to [`marketing-agent-classes.md`](marketing-agent-classes.md). Both essays inform the structural decisions in the [main README](../README.md).*

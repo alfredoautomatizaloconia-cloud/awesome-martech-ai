@@ -329,6 +329,7 @@ Autonomous bidding, creative selection, audience expansion, and pacing built int
 **Class 1b — Aggregator-Network Platforms** (aggregate third-party supply)
 
 - [AppLovin (AXON 2.0)](https://www.applovin.com/axon/) — Autonomous ML targeting and bidding inside AppLovin's owned mobile ad network. AXON 2.0 shipped in 2023 and is associated with AppLovin's subsequent revenue and market-cap re-rating.
+- [Moloco](https://www.moloco.com/) — ML-driven ad platform for mobile UA and retail-media DSPs; technical reputation comparable to AppLovin in its segments.
 - [Mobvista / Mintegral](https://www.mobvista.com/) — HK-listed; programmatic ad network with global SSP/DSP infrastructure, strong in Chinese mobile-app outbound.
 - [Tencent Ads (腾讯广告)](https://e.qq.com/) — Autonomous ranking and bidding inside the Tencent superapp surface (WeChat, video, news, games).
 - [Alibaba Mama (阿里妈妈)](https://www.alimama.com/) — The same pattern inside Alibaba's e-commerce ad surface.
@@ -354,16 +355,26 @@ LLM-native agents operating in the post-click conversation: customer support, sa
 
 - [Sierra](https://sierra.ai/) — $100M ARR within 7 quarters of founding; co-founded by Bret Taylor (ex-Salesforce CEO).
 - [Decagon](https://decagon.ai/) — AI agents for customer support; significant fintech and consumer-brand traction.
+- [Intercom Fin](https://www.intercom.com/fin) — Intercom's autonomous customer-service agent; deployed across Intercom's SaaS customer base since 2023.
 - [Cresta](https://cresta.com/) — Real-time agent assist plus autonomous agents for sales and support conversations.
 - [Ada](https://www.ada.cx/) — Customer service automation; early LLM-native pivot in the category.
+- [Cognigy](https://www.cognigy.com/) — Enterprise conversational AI platform for contact centers; strong European enterprise traction.
 - [Parloa](https://www.parloa.com/) — European conversational AI for contact centers.
 
 ### Class 4 — Agent-Mediated Discovery (Frontier)
 
-The newest class. Targets the AI agents that increasingly mediate human purchase decisions — ChatGPT, Claude, Perplexity, vertical buying agents — rather than human end-users directly. No disclosed scale yet; the thesis is structural.
+The newest class. Targets the AI agents that increasingly mediate human purchase decisions — ChatGPT, Claude, Perplexity, vertical buying agents — rather than human end-users directly. No disclosed scale yet; the thesis is structural. Two sub-categories are forming:
 
-- [sitefire](https://www.ycombinator.com/companies/sitefire) — *Agent SEO*: making products legible and recommendable to AI agents.
-- [Lapis](https://www.ycombinator.com/companies/lapis) — Native ad placement inside ChatGPT; cross-listed from Class 2 because it pioneers a new surface.
+**Class 4a — GEO / AEO platforms** (measure and improve brand visibility inside LLM answers)
+
+- [Profound](https://www.tryprofound.com/) — Tracks brand mentions and recommendations across ChatGPT, Perplexity, Gemini, and Google AI Overviews; widely cited as the category-defining product.
+- [Daydream](https://withdaydream.com/) — GEO platform focused on making brand catalogs and content discoverable to AI buying agents.
+- [Scrunch AI](https://www.scrunchai.com/) — Analytics for how brands appear in LLM-generated responses across major answer engines.
+
+**Class 4b — AI-channel ad placement** (buying media inside AI-agent surfaces)
+
+- [Lapis](https://www.ycombinator.com/companies/lapis) — Native ad placement inside ChatGPT; pioneering a new buying surface.
+- [sitefire](https://www.ycombinator.com/companies/sitefire) — *Agent SEO*: making products legible and recommendable to AI agents at the schema/feed level.
 
 As AI agents intermediate more commerce decisions, the SEO/SEM stack must be rewritten. The category is largely empty; LLM understanding is the core weapon.
 

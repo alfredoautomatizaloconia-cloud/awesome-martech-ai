@@ -2,13 +2,11 @@
 
 *[中文版 / Chinese version](marketing-agent-classes.zh.md)*
 
-The term "Marketing AI Agent" is applied loosely in 2025–2026 to four operationally distinct kinds of system. Conflating them produces bad investment theses and bad product theses. This essay separates them into four **categorical classes** — not a linear hierarchy of Tier 1/2/3/4 — and explains where each makes money, what technology it actually runs on, and where LLM reasoning has structural leverage.
+The term "Marketing AI Agent" is applied in 2025–2026 to four operationally distinct kinds of system. Conflating them produces unreliable investment theses and unreliable product theses. This essay separates them into four **categorical classes** — distinguished by where the agent operates, who its customer is, and what its economic model looks like — and explains where each makes money, what technology it actually runs on, and where LLM reasoning has structural leverage.
 
-## Why categorical, not tiered
+## How the four classes are distinguished
 
-An earlier version of this analysis used a "Tier 1 / Tier 2 / Tier 3 / Tier 4" structure. Numbered tiers imply a linear hierarchy — Tier 1 is bigger or more important than Tier 4 — which misrepresents the actual market. The real distinctions among marketing-agent classes are **categorical**: *where the agent operates in the ecosystem*, *who its customer is*, and *what its economic model looks like*. Maturity (incumbent / scaled / PMF / early) is a secondary axis that varies *within* each class.
-
-The four classes below are distinguished primarily by where the agent sits:
+The four classes are categorical, not ordinal. They are distinguished primarily by **where the agent sits in the marketing ecosystem**. Maturity (incumbent / scaled / PMF / early) is a secondary axis *within* each class, not a separate dimension.
 
 | Class | Position | Who pays | Economic model |
 |---|---|---|---|
@@ -33,6 +31,7 @@ Two sub-types are worth distinguishing because their economic moats differ.
 **1b — Aggregator-Network Platforms (aggregate third-party supply)**
 
 - AppLovin (AXON 2.0) — aggregates mobile-app inventory
+- Moloco — ML-driven ad platform serving mobile UA and retail-media DSPs; technical reputation comparable to AppLovin in its segments
 - Mobvista / Mintegral — same pattern, HK-listed, strong in Chinese outbound
 - Tencent Ads — autonomous ranking and bidding inside Tencent's superapp surface
 - Alibaba Mama — the same inside Alibaba's e-commerce surface
@@ -75,20 +74,30 @@ LLM-native agents operating in the post-click conversation: customer support, sa
 **Product-market fit, scaling:**
 
 - Decagon — AI agents for customer support; significant fintech and consumer-brand traction.
+- Intercom Fin — Intercom's autonomous customer-service agent, deployed across Intercom's SaaS customer base since 2023.
 - Cresta — real-time agent assist plus autonomous sales/support agents.
 - Ada — customer service automation; an early LLM-native pivot in the category.
+- Cognigy — enterprise conversational AI platform for contact centers; strong European enterprise traction.
 - Parloa — European conversational AI for contact centers.
 
 Economics resemble enterprise SaaS (per-seat, per-resolution) rather than ad take-rate.
 
 ## Class 4 — Agent-Mediated Discovery (Frontier)
 
-The newest and most speculative class. Whereas Classes 1–3 all ultimately serve human end-users, Class 4 targets the AI agents that increasingly mediate human purchase decisions. ChatGPT, Claude, Perplexity, and vertical buying agents are becoming the audience.
+The newest and most speculative class. Whereas Classes 1–3 all ultimately serve human end-users, Class 4 targets the AI agents that increasingly mediate human purchase decisions. ChatGPT, Claude, Perplexity, and vertical buying agents are becoming the audience. Two sub-categories are forming:
 
-- sitefire — *Agent SEO*: making products legible and recommendable to AI agents.
-- Lapis — ad placement inside ChatGPT (cross-listed from Class 2 because it pioneers a new surface).
+**4a — GEO / AEO platforms** (Generative / Answer Engine Optimization — measure and improve brand presence inside LLM-generated answers):
 
-No disclosed scale exists yet. The thesis is structural: as AI agents intermediate more commerce decisions, the entire SEO/SEM stack must be rewritten. Class 4 is what comes next.
+- Profound — tracks brand mentions and recommendations across ChatGPT, Perplexity, Gemini, and Google AI Overviews; widely cited as the category-defining product.
+- Daydream — GEO platform focused on making brand catalogs and content discoverable to AI buying agents.
+- Scrunch AI — analytics for how brands appear in LLM-generated responses across major answer engines.
+
+**4b — AI-channel ad placement** (buying media inside AI-agent surfaces):
+
+- Lapis — native ad placement inside ChatGPT; pioneering a new buying surface.
+- sitefire — *Agent SEO*: making products legible and recommendable to AI agents at the schema/feed level.
+
+No disclosed scale exists yet for any Class 4 entry. The thesis is structural: as AI agents intermediate more commerce decisions, the entire SEO/SEM stack must be rewritten. Class 4 is what comes next.
 
 ## The axes that distinguish the four classes
 
@@ -132,8 +141,4 @@ Domestic Class 2 (independent agent products sold to brands) is comparatively th
 
 The four classes are not in a hierarchy. They are four different positions in the marketing ecosystem, with different customers, economics, technologies, and competitive dynamics. The right question for a builder is not *which tier do I belong to*; it is *which class am I building in, and what does that class's economic structure imply about my moat and my ceiling*.
 
-The interesting convergence frontier is the point where Class 3 or Class 4 LLM-native agents gain access to first-party data and start operating with Class 1-level autonomy. That convergence has not yet happened. When it does, the taxonomy will need a fifth class.
-
----
-
-*Original analysis for [awesome-martech-ai](https://github.com/leoncuhk/awesome-martech-ai). Companion to [`five-layers-cognitive-cycle.md`](five-layers-cognitive-cycle.md). Comments and corrections welcome via PR.*
+The interesting convergence frontier is the point where Class 3 or Class 4 LLM-native agents gain access to first-party data and start operating with Class 1-level autonomy. That convergence has not yet happened.

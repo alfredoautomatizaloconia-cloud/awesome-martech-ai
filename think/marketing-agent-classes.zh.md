@@ -2,13 +2,11 @@
 
 *[English version](marketing-agent-classes.md)*
 
-"营销 AI Agent" 这个词在 2025–2026 年被宽泛地用来指四类**运作方式截然不同**的系统。把它们混在一起会同时产出糟糕的投资判断和糟糕的产品判断。本文把它们拆成四个**分类（categorical）而非线性层级**，并解释每一类挣的是什么钱、底层跑的是什么技术、LLM 推理在哪些位置有结构性优势。
+"营销 AI Agent" 这个词在 2025–2026 年被用来指四类**运作方式截然不同**的系统。把它们混在一起会同时产出不可靠的投资判断和产品判断。本文把它们拆成四个**分类（categorical）**——按 agent 在生态中的位置、客户是谁、经济模型是什么来划分——并解释每一类挣的是什么钱、底层跑的是什么技术、LLM 推理在哪些位置有结构性优势。
 
-## 为什么是分类，不是层级
+## 四类如何区分
 
-这套分析的早期版本用过 "Tier 1 / Tier 2 / Tier 3 / Tier 4" 的层级命名。但**编号 tier 暗含线性序列**——Tier 1 比 Tier 4 更重要或更大——而这种暗示在 marketing agent 市场里是错的。真正的差异是**分类性的**：*agent 在生态中位于哪里、客户是谁、经济模型是什么*。**成熟度（incumbent / scaled / PMF / early）是类内的次级轴**，不是另一种类别。
-
-下面四个类别主要按"agent 坐在生态中的什么位置"划分：
+四个类别是**分类的（categorical），不是有序的（ordinal）**。主要按"agent 在营销生态中坐在哪里"划分。**成熟度（incumbent / scaled / PMF / early）是类内的次级轴**，不是另一种类别。
 
 | Class | 位置 | 谁付钱 | 经济模型 |
 |---|---|---|---|
@@ -33,6 +31,7 @@
 **Class 1b — 聚合网络型平台**（聚合第三方供给）
 
 - AppLovin（AXON 2.0）—— 聚合移动应用流量
+- Moloco —— ML 驱动的广告平台，深耕移动 UA 与零售媒体 DSP；在其细分领域技术声誉与 AppLovin 同档
 - Mobvista / Mintegral —— 同样模式，港股上市，强在中国出海移动
 - 腾讯广告 —— 嵌在 Tencent 超级 app 矩阵内部的自主排序与出价
 - 阿里妈妈 —— 阿里电商平面里的同一模式
@@ -75,18 +74,28 @@ LLM 原生 agent，运行在**点击之后的对话层**：客服、销售对话
 **PMF，正在扩张：**
 
 - Decagon —— 客服 agent；金融科技和消费品牌客户有牵引力。
+- Intercom Fin —— Intercom 的自主客服 agent，2023 年起在 Intercom 客户群中部署。
 - Cresta —— 实时坐席辅助 + 自主销售/客服 agent。
 - Ada —— 客服自动化；这一品类里较早的 LLM 原生转型。
+- Cognigy —— 企业级对话 AI 平台，欧洲呼叫中心市场地位强。
 - Parloa —— 欧洲呼叫中心对话 AI。
 
 ## Class 4 — Agent-Mediated Discovery（前沿）
 
-最新也最投机的一类。Class 1–3 最终都服务**人类终端用户**，而 Class 4 直接面对**那些越来越多代替人做购买决策的 AI agent**——ChatGPT、Claude、Perplexity、垂直购买助理正在成为新的"受众"。
+最新也最投机的一类。Class 1–3 最终都服务**人类终端用户**，而 Class 4 直接面对**那些越来越多代替人做购买决策的 AI agent**——ChatGPT、Claude、Perplexity、垂直购买助理正在成为新的"受众"。这一类内部已经分化出两个子型：
 
-- sitefire —— *Agent SEO*：让产品对 AI agent 可读可推荐。
-- Lapis —— ChatGPT 内的广告投放（与 Class 2 交叉列出，因为它开拓的是新的 surface）。
+**4a — GEO / AEO 平台**（Generative / Answer Engine Optimization——测量并提升品牌在 LLM 回答中的可见度）：
 
-目前没有公开规模化数据。论点是结构性的：**当 AI agent 中介越来越多的商业决策，整套 SEO/SEM 逻辑必须重写**。Class 4 就是"下一步"。
+- Profound —— 跨 ChatGPT、Perplexity、Gemini、Google AI Overviews 跟踪品牌出现与推荐情况；业内公认的品类定义级产品。
+- Daydream —— 让品牌目录和内容对 AI 购买 agent 可发现可推荐。
+- Scrunch AI —— 分析品牌在主流 answer engine LLM 回答中的呈现状况。
+
+**4b — AI 渠道内广告投放**（在 AI agent surface 上买位）：
+
+- Lapis —— ChatGPT 内的原生广告投放，开拓全新的购买 surface。
+- sitefire —— *Agent SEO*：在 schema/feed 层让产品对 AI agent 可读可推荐。
+
+目前没有任何 Class 4 玩家公开规模化数据。论点是结构性的：**当 AI agent 中介越来越多的商业决策，整套 SEO/SEM 逻辑必须重写**。Class 4 就是"下一步"。
 
 ## 区分四类的几根轴
 
@@ -130,8 +139,4 @@ Class 1b（聚合网络型平台——AppLovin、Mintegral、腾讯广告、阿�
 
 四个类别**不是层级关系**。它们是营销生态中的四个不同位置，各自有不同的客户、经济模型、技术、竞争动态。**对建造者来说，正确的问题不是"我属于第几层"，而是"我在哪一类里建造，这一类的经济结构对我的护城河和天花板意味着什么"**。
 
-最值得关注的融合前沿是：Class 3 或 Class 4 的 LLM 原生 agent **获得 first-party 数据访问权，开始以 Class 1 级别的自主性运行**。这种融合尚未发生。一旦发生，这套分类需要新增第五类。
-
----
-
-*为 [awesome-martech-ai](https://github.com/leoncuhk/awesome-martech-ai) 撰写的原创分析。与 [`five-layers-cognitive-cycle.zh.md`](five-layers-cognitive-cycle.zh.md) 互为姊妹篇。欢迎通过 PR 提交意见与修正。*
+最值得关注的融合前沿是：Class 3 或 Class 4 的 LLM 原生 agent **获得 first-party 数据访问权，开始以 Class 1 级别的自主性运行**。这种融合尚未发生。
