@@ -154,7 +154,7 @@ The data substrate that everything else stands on: customer events, identity res
 
 - [Google Ads Data Hub](https://www.thinkwithgoogle.com/products/ads-data-hub/) — Privacy-preserving query layer over Google's first-party data.
 - [AWS Clean Rooms](https://aws.amazon.com/clean-rooms/) — Cross-party data collaboration without raw data sharing.
-- [Snowflake Data Clean Rooms](https://www.snowflake.com/en/data-cloud/workloads/data-clean-room/) — Native clean-room workloads inside the Snowflake warehouse.
+- [Snowflake Data Clean Rooms](https://www.snowflake.com/en/product/features/data-clean-rooms/) — Native clean-room workloads inside the Snowflake warehouse.
 
 ## Intelligence Layer
 
@@ -189,7 +189,7 @@ LTV, propensity, segmentation, embeddings — the user representations that feed
 
 - [PyMC-Marketing](https://github.com/pymc-labs/pymc-marketing) — Bayesian CLV (BG/NBD, Gamma-Gamma) and MMM, production-ready.
 - [Lifetimes](https://github.com/CamDavidsonPilon/lifetimes) by Cam Davidson-Pilon — Canonical Python library for non-contractual CLV.
-- [pLTV at Meta](https://research.facebook.com/blog/2022/10/predicting-lifetime-value-of-ad-customers/) — Predictive LTV in ad systems.
+- [Customer Lifetime Value at Meta](https://www.facebook.com/business/help/1730784113851988) — Meta's official guide to predictive LTV in their ad system.
 - [USE: Universal Sentence Encoder](https://tfhub.dev/google/universal-sentence-encoder/4) — Baseline for user/content embeddings.
 - [Two-Tower Models for Retrieval](https://research.google/pubs/sampling-bias-corrected-neural-modeling-for-large-corpus-item-recommendations/) — The architecture behind YouTube and most modern CDP-side retrieval.
 
@@ -216,14 +216,14 @@ Given a user model and an inventory, which action does the system take? Bid amou
 ### Bidding and Pacing
 
 - [Real-Time Bidding by Reinforcement Learning in Display Advertising](https://arxiv.org/abs/1701.02490) — Foundational RL-for-bidding paper from Alibaba.
-- [Multi-Constraint Online Allocation for Display Advertising](https://research.google/pubs/online-allocation-and-pricing-with-economies-of-scale/) — Google's approach to pacing and constrained allocation.
+- [Google Research — Market Algorithms](https://research.google/teams/market-algorithms/) — Google's umbrella research program on auction optimization, pacing, budget-constrained mechanism design, and online matching for display advertising.
 - [Bid Shading in First-Price Auctions](https://research.criteo.com/) — Criteo and Adobe research on the post-header-bidding shift.
 
 ### Next Best Action
 
-- [Next Best Action Marketing at Pega](https://www.pega.com/products/customer-decision-hub) — Reference architecture for enterprise NBA.
+- [Pega Customer Decision Hub](https://www.pega.com/products/decision-hub) — Reference architecture for enterprise NBA.
 - [Contextual Bandits at Netflix](https://research.netflix.com/research-area/recommendations) — Artwork personalization, a widely-cited bandit case in production.
-- [Reinforcement Learning for Personalization at Uber](https://www.uber.com/blog/categories/data-machine-learning/) — Uber's NBA system blog series.
+- [Uber Engineering Blog — AI & ML](https://www.uber.com/blog/engineering/ai/) — Uber engineering's AI/ML category, including production NBA, bandits, and personalization systems.
 
 ### Budget and Audience Allocation
 
@@ -243,7 +243,7 @@ The major buying surfaces are Google Ads, Meta Ads, Amazon Ads, TikTok Ads, reta
 ### CRM and Lifecycle Messaging
 
 - [Iterable](https://iterable.com/) — Programmable channel orchestration; reference platform for lifecycle messaging.
-- [Braze](https://www.braze.com/products/sage-ai) — Sage AI for journey optimization.
+- [Braze (BrazeAI)](https://www.braze.com/product/brazeai) — BrazeAI (formerly Sage AI) for AI-driven personalization and journey optimization.
 - [Customer.io](https://customer.io/) — Developer-friendly lifecycle messaging.
 - [OneSignal](https://onesignal.com/) — Push and in-app messaging.
 
@@ -322,7 +322,7 @@ Autonomous bidding, creative selection, audience expansion, and pacing built int
 **Class 1a — Walled-Garden Platforms** (own end-user attention)
 
 - [Google Performance Max / Smart Bidding](https://ads.google.com/home/campaigns/performance-max/) — Cross-channel automated campaign type inside Google Ads.
-- [Meta Advantage+](https://www.facebook.com/business/ads/advantage-plus) — Automated audience, creative, and placement across Meta surfaces.
+- [Meta Advantage+](https://www.facebook.com/business/ads/meta-advantage-plus) — Automated audience, creative, and placement across Meta surfaces.
 - [Amazon Sponsored / DSP Automated Bidding](https://advertising.amazon.com/) — Retail-media equivalent.
 - [TikTok Smart+](https://ads.tiktok.com/business/en-US/blog/smart-plus-ai-powered-ad-solution) — TikTok's answer to PMax/Advantage+.
 
@@ -429,7 +429,7 @@ This is bigger than the products listed under Class 4 — it is the largest stru
 
 Production case studies and engineering write-ups from companies running Martech AI at scale. Each entry tagged with the primary cross-layer domain it speaks to (UI = User Intelligence, AS = Advertising Systems, GE = Growth Engine).
 
-- [Meta — Predicting Lifetime Value of Ad Customers](https://research.facebook.com/blog/2022/10/predicting-lifetime-value-of-ad-customers/) — pLTV in ad ranking. *[UI, AS]*
+- [Meta — Customer Lifetime Value Guide](https://www.facebook.com/business/help/1730784113851988) — Meta's official documentation on pLTV in ad ranking. *[UI, AS]*
 - [Alibaba — Deep Interest Network in Display Advertising](https://arxiv.org/abs/1706.06978) — The DIN family in production for years. *[AS]*
 - [Tencent — Hierarchical Recommendation and Crowd Algorithms](https://www.atatech.org/) — Tencent's ad and growth stack. *[UI, AS]*
 - [Uber Eats — Causal Inference for Pricing and Promotions](https://www.uber.com/blog/causal-inference-at-uber/) — Heterogeneous treatment effects in marketplace pricing. *[GE]*
@@ -451,7 +451,7 @@ Long-form analyses written for this repository.
 - [Lean Analytics](https://leananalyticsbook.com/) by Croll & Yoskovitz — The growth-funnel framing that still informs modern NBA.
 - [Hooked](https://www.nirandfar.com/hooked/) by Nir Eyal — Behavioral mechanics behind retention and lifecycle design.
 - [The Mom Test](http://momtestbook.com/) by Rob Fitzpatrick — How to learn what marketing should actually optimize for.
-- [Marketing Metrics](https://www.marketingmetricsbook.com/) — Canonical reference for metric definitions.
+- [Marketing Metrics](https://www.amazon.com/Marketing-Metrics-Definitive-Measuring-Performance/dp/0137058292) by Farris, Bendle, Pfeifer, Reibstein — Canonical reference for metric definitions across marketing functions.
 
 ## Research Papers
 
@@ -489,7 +489,7 @@ See [leoncuhk/recsys-papers](https://github.com/leoncuhk/recsys-papers) for a ma
 
 - [awesome-quant-ai](https://github.com/leoncuhk/awesome-quant-ai) — Companion list for quantitative investment AI.
 - [recsys-papers](https://github.com/leoncuhk/recsys-papers) — Recommender systems literature.
-- [awesome-causal-inference](https://github.com/matheusfacure/awesome-causal-inference) — Causal inference resources.
+- [awesome-causal-inference](https://github.com/matteocourthoud/awesome-causal-inference) — Curated causal inference libraries, resources, and industry applications.
 - [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) — General LLM app patterns; some relevant to agent design.
 
 ## Contributing
