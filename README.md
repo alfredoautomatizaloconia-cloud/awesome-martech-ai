@@ -8,7 +8,7 @@ A curated list of AI/ML systems powering modern marketing technology — causal 
 
 <br>
 
-<img src="assets/martech-ai-stack.jpg" alt="Martech AI Stack" width="720">
+<img src="assets/martech-ai-stack.png" alt="Martech AI Stack" width="720">
 
 </div>
 
@@ -309,6 +309,10 @@ The new vertical layer that cuts across the Stack: marketing agents in productio
 
 ## Four Classes of Marketing Agents
 
+<div align="center">
+<img src="assets/marketing-agent-classes.png" alt="Four Classes of Marketing Agents" width="780">
+</div>
+
 "Marketing AI Agent" is applied to four operationally distinct kinds of system. They are not a linear hierarchy — they are categorical classes, distinguished primarily by *where the agent operates in the marketing ecosystem*. Maturity (incumbent, scaled, PMF, early) is a secondary axis that varies within each class. A long-form treatment, including the buyer-side vs supply-side asymmetry, take-rate economics, and the Chinese-vs-US ecosystem comparison, is in [`think/marketing-agent-classes.md`](think/marketing-agent-classes.md).
 
 ### Class 1 — Platform-Owned Automation
@@ -380,25 +384,31 @@ Most Class 1 and Class 2 systems are built on traditional ML (gradient boosting,
 
 ## Frontier (2025/2026)
 
-### Agent-to-Agent Marketing
-
-A new layer in which the audience of an ad is another AI agent acting on behalf of a user (ChatGPT, Claude, Perplexity, vertical buying agents). This reshapes SEO, comparison shopping, and recommendation. Early signals: sitefire (Agent SEO), Lapis (ChatGPT ad placement), schema and structured-data renaissance, agent-readable product catalogs.
+Cross-stack trends reshaping multiple layers of the Martech AI Stack at once. Agent-class-specific frontiers (e.g., Class 3 expanding into sales conversations, Class 4 product activity) are covered within their respective classes above; this section focuses on shifts that do not map cleanly to a single agent species.
 
 ### Privacy-First Measurement
 
-Post-cookie, post-IDFA. The revival of MMM, incrementality testing, geo-experiments, and clean rooms. Tooling listed under the [Measurement Layer](#measurement-layer) and [Data Layer](#data-layer).
+Post-cookie, post-IDFA. The revival of MMM, incrementality testing, geo-experiments, and clean rooms as primary measurement substrate. Reshapes the Measurement Layer and the Data Layer simultaneously; affects attribution economics across every agent class. Tooling under the [Measurement Layer](#measurement-layer) and [Data Layer](#data-layer).
 
 ### Foundation Models on Tabular CDP Data
 
-Pretrained transformers on event streams and customer behavior — early but accelerating. Watch TabPFN, customer-sequence models analogous to SASRec/BERT4Rec generalized to full CDP event data.
+Pretrained transformers on event streams and customer behavior — early but accelerating. Watch TabPFN, customer-sequence models analogous to SASRec/BERT4Rec generalized to full CDP event data. Sits in the Intelligence Layer; will change what every downstream class can do with user representations.
 
 ### AI4AI for Growth
 
-LLM agents that write the experiments, generate the audiences, and propose the creative tests — automating the inner loop of growth itself. Most YC 2026 marketing-AI cohort entries are bets on some version of this thesis.
+LLM agents that write the experiments, generate the audiences, and propose the creative tests — automating the *inner loop* of growth itself, not just the execution. Cuts across Intelligence + Decision + Measurement layers. Most YC 2026 marketing-AI cohort entries are bets on some version of this thesis.
 
-### Conversational Commerce as the Default UI
+### Agent-to-Agent Marketing
 
-When the chat window becomes the storefront, the marketing surface is the conversation. Sierra, Decagon, and Cresta point at the service end; selling-side equivalents are forming now.
+The structural shift behind Class 4. As AI agents (ChatGPT, Claude, Perplexity, vertical buying assistants) intermediate more consumer purchase decisions, the *audience* of marketing changes from human to agent. Consequences span every layer:
+
+- **Data:** product information must become structured and agent-readable; the schema-and-feed renaissance.
+- **Intelligence:** embeddings and retrieval must be tuned for agent queries, not human keywords.
+- **Decision:** the SEO/SEM stack — built on a human-attention model of search — needs rewriting for an audience that does not click.
+- **Activation:** new surfaces emerge (placement inside ChatGPT, recommendation inside vertical agents); existing surfaces (search, social) lose intermediation share.
+- **Measurement:** attribution to an agent-mediated purchase is a different problem from attribution to a human-mediated one.
+
+This is bigger than the products listed under Class 4 — it is the largest structural reorientation of the marketing stack since mobile and post-cookie measurement, and it is still mostly upstream of disclosed traction.
 
 ---
 
