@@ -431,7 +431,7 @@ Production case studies and engineering write-ups from companies running Martech
 
 Long-form analyses written for this repository.
 
-- [Four Classes of Marketing Agents](think/marketing-agent-classes.md) — A categorical taxonomy (Platform-Owned / Independent / Conversational / Agent-Mediated) replacing the linear-tier framing. Covers the 1a/1b walled-garden vs aggregator-network split, why Class 1b is the most profitable corner, and the Chinese-vs-US ecosystem asymmetry.
+- [Four Classes of Marketing Agents](think/marketing-agent-classes.md) — A categorical taxonomy (Platform-Owned / Independent / Conversational / Agent-Mediated) replacing the linear-tier framing. Covers the 1a/1b walled-garden vs aggregator-network split, why Class 1b is the most profitable corner, and the Chinese-vs-US ecosystem asymmetry. ([中文版 / Chinese version](think/marketing-agent-classes.zh.md))
 - [The Five Layers as a Cognitive Cycle](think/five-layers-cognitive-cycle.md) — How Data, Intelligence, Decision, Activation, and Measurement decompose the Martech AI feedback loop into independently optimizable stages, and what gets broken when layer boundaries collapse. ([中文版 / Chinese version](think/five-layers-cognitive-cycle.zh.md))
 
 ## Books

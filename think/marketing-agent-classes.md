@@ -1,5 +1,7 @@
 # Four Classes of Marketing Agents
 
+*[中文版 / Chinese version](marketing-agent-classes.zh.md)*
+
 The term "Marketing AI Agent" is applied loosely in 2025–2026 to four operationally distinct kinds of system. Conflating them produces bad investment theses and bad product theses. This essay separates them into four **categorical classes** — not a linear hierarchy of Tier 1/2/3/4 — and explains where each makes money, what technology it actually runs on, and where LLM reasoning has structural leverage.
 
 ## Why categorical, not tiered
