@@ -89,4 +89,4 @@ Martech AI 的五层不是任意切分，而是把"**数据 → 行动 → 反�
 
 ---
 
-*与 [`three-tier-marketing-agents.md`](three-tier-marketing-agents.md) 互为姊妹篇。两篇共同支撑 [README](../README.md) 中的 Cross-Layer Domain Views 表格。*
+*与 [`marketing-agent-classes.md`](marketing-agent-classes.md) 互为姊妹篇。两篇共同支撑 [README](../README.md) 的结构性决策。*

@@ -29,8 +29,7 @@ A curated list of AI/ML systems powering modern marketing technology — causal 
 
 **Part II — The Agent Era**
 
-- [Four Tiers of Marketing Agents](#four-tiers-of-marketing-agents)
-- [Conversational and Service Agents](#conversational-and-service-agents)
+- [Four Classes of Marketing Agents](#four-classes-of-marketing-agents)
 - [LLM Agent Leverage Points](#llm-agent-leverage-points)
 - [Agent-Building Frameworks](#agent-building-frameworks)
 - [Frontier (2025/2026)](#frontier-20252026)
@@ -235,11 +234,11 @@ Allocation typically derives jointly from MMM (see Measurement) and uplift targe
 
 ## Activation Layer
 
-The channels and surfaces through which decisions reach users: paid media, CRM, push, on-site, and increasingly conversational. The autonomous decisioning *inside* the major paid surfaces is covered in Part II as Tier 1; the programmatic infrastructure connecting publishers to advertisers is Tier 4.
+The channels and surfaces through which decisions reach users: paid media, CRM, push, on-site, and increasingly conversational. The autonomous decisioning *inside* the major paid surfaces (walled gardens and aggregator networks) is covered in Part II as Class 1; independent agent products operating across surfaces are Class 2; in-conversation service agents are Class 3; the emerging AI-mediated discovery surface is Class 4.
 
 ### Paid Media Surfaces
 
-The major buying surfaces are Google Ads, Meta Ads, Amazon Ads, TikTok Ads, retail-media networks (Walmart, Target, Instacart), and the open programmatic ecosystem (DSPs, SSPs, exchanges). Each ships with built-in automated decisioning. See [Four Tiers of Marketing Agents](#four-tiers-of-marketing-agents) for the agent-class treatment.
+The major buying surfaces are Google Ads, Meta Ads, Amazon Ads, TikTok Ads, retail-media networks (Walmart, Target, Instacart), and the open programmatic ecosystem (DSPs, SSPs, exchanges). Each ships with built-in automated decisioning. See [Four Classes of Marketing Agents](#four-classes-of-marketing-agents) in Part II for the agent treatment.
 
 ### CRM and Lifecycle Messaging
 
@@ -306,69 +305,71 @@ Data governance, model governance, and consent state management increasingly for
 
 # Part II — The Agent Era
 
-The new vertical layer that cuts across the Stack: marketing agents in production, the four tiers that distinguish them, and the points where LLM reasoning is structurally advantaged.
+The new vertical layer that cuts across the Stack: marketing agents in production, the four classes that distinguish them, and the points where LLM reasoning is structurally advantaged.
 
-## Four Tiers of Marketing Agents
+## Four Classes of Marketing Agents
 
-Marketing agents in 2025–2026 fall into four operationally distinct classes. Distinguishing them clarifies what each system does, who its customer is, and how it makes money. A long-form treatment is in [`think/three-tier-marketing-agents.md`](think/three-tier-marketing-agents.md).
+"Marketing AI Agent" is applied to four operationally distinct kinds of system. They are not a linear hierarchy — they are categorical classes, distinguished primarily by *where the agent operates in the marketing ecosystem*. Maturity (incumbent, scaled, PMF, early) is a secondary axis that varies within each class. A long-form treatment, including the buyer-side vs supply-side asymmetry, take-rate economics, and the Chinese-vs-US ecosystem comparison, is in [`think/marketing-agent-classes.md`](think/marketing-agent-classes.md).
 
-### Tier 1 — Platform-Native AI
+### Class 1 — Platform-Owned Automation
 
-Autonomous bidding, creative assembly, audience discovery, and budget pacing built into the major ad-buying surfaces. Operates as autonomous ML rather than as an LLM-driven agent product, and manages a majority of global digital ad spend.
+Autonomous bidding, creative selection, audience expansion, and pacing built into ad surfaces that own (or aggregate) their own supply. Ships as part of the buying interface; advertisers do not deploy it as a separate product. Built on traditional ML (deep CTR/CVR models, RL bidders, multi-armed bandits); LLMs limited to creative generation. Class 1 manages the majority of global digital ad spend.
 
-- [Google Performance Max / Smart Bidding](https://ads.google.com/home/campaigns/performance-max/) — Cross-channel automated campaign type; the de facto agent inside Google Ads.
-- [Meta Advantage+](https://www.facebook.com/business/ads/advantage-plus) — Automated audience, creative, and placement decisions across Meta surfaces.
-- [Amazon Sponsored Brands / DSP Automated Bidding](https://advertising.amazon.com/) — Amazon's equivalent on retail media.
+**Class 1a — Walled-Garden Platforms** (own end-user attention)
+
+- [Google Performance Max / Smart Bidding](https://ads.google.com/home/campaigns/performance-max/) — Cross-channel automated campaign type inside Google Ads.
+- [Meta Advantage+](https://www.facebook.com/business/ads/advantage-plus) — Automated audience, creative, and placement across Meta surfaces.
+- [Amazon Sponsored / DSP Automated Bidding](https://advertising.amazon.com/) — Retail-media equivalent.
 - [TikTok Smart+](https://ads.tiktok.com/business/en-US/blog/smart-plus-ai-powered-ad-solution) — TikTok's answer to PMax/Advantage+.
 
-### Tier 2 — Vertical Agent Products
-
-Independent agent products sold to brands and agencies, with disclosed scale, customers, or revenue.
-
-- [Albert.ai](https://albert.ai/) — One of the earliest autonomous ad agents (originally Adgorithms). Cross-channel management across Google, Meta, and YouTube. Disclosed case study: Harley-Davidson reported 5× traffic and a 2,930% monthly lead lift after deployment.
-- [Ryze AI](https://ryze.ai/) — Disclosed scale of $500M+ ad spend managed across 2,000+ marketers in 23 countries, covering Google, Meta, Microsoft, LinkedIn, TikTok, Pinterest, and Amazon PPC. Reported customer outcome: 3.8× ROAS within 6 weeks.
-- [Muze AI](https://muzeai.com/) — YC-backed; positioned to replace $10K–$15K/month agency retainers. 85–90% autonomous; video and image generation in under 2 minutes; auto-detects creative fatigue. On the Shopify App Store with paying customers, still early.
-- [Jellyfish](https://www.jellyfish.com/) — Agency that replaced parts of its human media-buying team with AI bots. 65% reduction in campaign launch time. Drove 80% faster content delivery and 30% cost reduction for M&S.
-
-### Tier 3 — YC 2026 Cohort (Early-Stage)
-
-LLM-native entrants from the YC 2026 batch. Approaches are differentiated; outcomes are not yet validated at scale.
-
-- [Uplane](https://www.ycombinator.com/companies/uplane) — Replaces marketing agencies; generates hundreds of ad creatives with matching landing pages, connects to CRM and ERP to learn what drives profit, not just clicks.
-- [Lapis](https://www.ycombinator.com/companies/lapis) — Native ad placement inside ChatGPT (a new channel), generating creative from existing brand assets across ChatGPT, Meta, and Google.
-- [sitefire](https://www.ycombinator.com/companies/sitefire) — *Agent SEO*: helps brands get discovered and recommended by AI agents. Buying placement in front of AI agents, not humans.
-- [Absurd](https://www.ycombinator.com/companies/absurd) — Full-stack AI video advertising. Kalshi's "Election Day" spot exceeded a million views.
-
-### Tier 4 — Programmatic Infrastructure
-
-Autonomous ML systems operating inside the programmatic supply chain, serving publishers and ad networks rather than brand advertisers directly. Targeting, bidding, and creative selection are run at platform scale; the customer relationship is structured as a take-rate on ad spend rather than as a SaaS product.
+**Class 1b — Aggregator-Network Platforms** (aggregate third-party supply)
 
 - [AppLovin (AXON 2.0)](https://www.applovin.com/axon/) — Autonomous ML targeting and bidding inside AppLovin's owned mobile ad network. AXON 2.0 shipped in 2023 and is associated with AppLovin's subsequent revenue and market-cap re-rating.
 - [Mobvista / Mintegral](https://www.mobvista.com/) — HK-listed; programmatic ad network with global SSP/DSP infrastructure, strong in Chinese mobile-app outbound.
 - [Tencent Ads (腾讯广告)](https://e.qq.com/) — Autonomous ranking and bidding inside the Tencent superapp surface (WeChat, video, news, games).
 - [Alibaba Mama (阿里妈妈)](https://www.alimama.com/) — The same pattern inside Alibaba's e-commerce ad surface.
-- [The Trade Desk](https://www.thetradedesk.com/) — The dominant independent DSP outside walled gardens.
-- [Criteo](https://www.criteo.com/) — Long-running retargeting DSP, still a meaningful programmatic player.
+- [Criteo](https://www.criteo.com/) — Long-running retargeting DSP, historically structured as a network.
+- [The Trade Desk](https://www.thetradedesk.com/) — Borderline 1a/1b; independent DSP that matches across exchanges without owning supply, but operates with the same autonomous-buying-surface logic.
 
-Economic characteristics: revenue scales with the volume of ad spend passing through the platform; the matching algorithm and first-party data are co-located; two-sided network effects between publishers and advertisers reinforce position. See [`think/three-tier-marketing-agents.md`](think/three-tier-marketing-agents.md) for the four-tier framework, the buyer-side vs supply-side 2×2 map, and the Chinese-vs-US ecosystem comparison.
+The 1a vs 1b distinction matters because economic moats differ: walled gardens own user attention end-to-end and capture the value of automation directly, while aggregator networks must split value with third-party publishers, which limits pricing power but extends reach. Class 1b is nonetheless one of the most profitable corners of the taxonomy — see the long-form essay for why.
 
-## Conversational and Service Agents
+### Class 2 — Independent Cross-Surface Agents
 
-The marketing funnel does not end at click — increasingly the conversation is the funnel. Conversational agents straddle the Activation and Decision layers in the Stack, but as a product category they belong here in Part II because their differentiator is autonomous reasoning, not channel mechanics.
+External agent products sold to brands and agencies. Operate across multiple Class 1 surfaces (Google, Meta, TikTok, retail media, programmatic) without owning supply. Tech substrate varies: scaled players are typically hybrid (traditional ML + LLM creative); early players are typically LLM-native.
 
-- [Sierra](https://sierra.ai/) — Conversational AI for customer service. Reached $100M ARR within 7 quarters of founding; co-founded by Bret Taylor (ex-Salesforce CEO).
-- [Decagon](https://decagon.ai/) — AI agents for customer support; significant traction in fintech and consumer brands.
+- [Albert.ai](https://albert.ai/) — One of the earliest autonomous ad agents (originally Adgorithms). Cross-surface management across Google, Meta, and YouTube. Disclosed case: Harley-Davidson reported 5× traffic and a 2,930% monthly lead lift after deployment.
+- [Ryze AI](https://ryze.ai/) — $500M+ ad spend managed across 2,000+ marketers in 23 countries. Reported customer outcome: 3.8× ROAS within 6 weeks.
+- [Jellyfish](https://www.jellyfish.com/) — Agency that replaced parts of its human media-buying team with AI bots. 65% reduction in campaign launch time; for M&S, 80% faster content delivery and 30% cost reduction.
+- [Muze AI](https://muzeai.com/) — YC-backed; positioned to replace $10K–$15K/month agency retainers. 85–90% autonomous; on the Shopify App Store with paying customers.
+- [Uplane](https://www.ycombinator.com/companies/uplane) — YC 2026; profit-aware agency replacement, connects to CRM and ERP to optimize on profit rather than clicks.
+- [Absurd](https://www.ycombinator.com/companies/absurd) — YC 2026; full-stack AI video advertising. Kalshi's "Election Day" spot exceeded a million views.
+
+### Class 3 — Conversational and Service Agents
+
+LLM-native agents operating in the post-click conversation: customer support, sales conversations, retention dialogue. Optimize conversation turns and resolution outcomes rather than impressions. This is the class where LLM reasoning is the core product, not a peripheral feature. Economics resemble enterprise SaaS (per-seat, per-resolution) rather than ad take-rate.
+
+- [Sierra](https://sierra.ai/) — $100M ARR within 7 quarters of founding; co-founded by Bret Taylor (ex-Salesforce CEO).
+- [Decagon](https://decagon.ai/) — AI agents for customer support; significant fintech and consumer-brand traction.
+- [Cresta](https://cresta.com/) — Real-time agent assist plus autonomous agents for sales and support conversations.
+- [Ada](https://www.ada.cx/) — Customer service automation; early LLM-native pivot in the category.
 - [Parloa](https://www.parloa.com/) — European conversational AI for contact centers.
-- [Cresta](https://cresta.com/) — Real-time agent assist and autonomous agents for sales and support conversations.
-- [Ada](https://www.ada.cx/) — Customer service automation; one of the earliest LLM-native pivots in the category.
+
+### Class 4 — Agent-Mediated Discovery (Frontier)
+
+The newest class. Targets the AI agents that increasingly mediate human purchase decisions — ChatGPT, Claude, Perplexity, vertical buying agents — rather than human end-users directly. No disclosed scale yet; the thesis is structural.
+
+- [sitefire](https://www.ycombinator.com/companies/sitefire) — *Agent SEO*: making products legible and recommendable to AI agents.
+- [Lapis](https://www.ycombinator.com/companies/lapis) — Native ad placement inside ChatGPT; cross-listed from Class 2 because it pioneers a new surface.
+
+As AI agents intermediate more commerce decisions, the SEO/SEM stack must be rewritten. The category is largely empty; LLM understanding is the core weapon.
 
 ## LLM Agent Leverage Points
 
-Most of the systems in Tiers 1, 2, and 4 are built on traditional ML — gradient boosting, multi-armed bandits, RL bidders — with LLMs limited to creative generation. The loop they optimize is high-frequency, low-latency, and data-dense, which favors classical ML over LLM reasoning. Three areas remain where LLM reasoning is structurally advantaged:
+Most Class 1 and Class 2 systems are built on traditional ML (gradient boosting, multi-armed bandits, RL bidders), with LLMs limited to creative generation. The optimization loop they run is high-frequency, low-latency, and data-dense, which rewards classical ML over LLM reasoning. LLM reasoning is structurally advantaged in three places:
 
-1. **Strategy layer.** Channel mix, market-entry decisions, brand positioning, budget allocation across portfolios. These require business-context reasoning rather than per-impression optimization.
-2. **End-to-end creative chain.** Market insight → creative strategy → copy/visual/video generation → A/B reading → iterative refinement, run coherently as a single loop rather than as isolated generation steps.
-3. **Agent-to-Agent marketing.** Making products legible and recommendable to AI buying agents (ChatGPT, Claude, vertical purchase assistants) as those agents intermediate more consumer decisions. The category is new and largely empty; see Frontier section below.
+1. **Strategy layer.** Channel mix, market-entry decisions, brand positioning, budget allocation across portfolios. Business-context reasoning rather than per-impression optimization. Class 2 players targeting this layer (Uplane is the clearest example) have a defensible thesis.
+2. **End-to-end creative chain.** Market insight → creative strategy → copy/visual/video → A/B reading → iterative refinement, run coherently as a single loop rather than as isolated generation steps.
+3. **Agent-to-Agent marketing.** Class 4 in its entirety — as AI agents mediate more buying decisions, the SEO/SEM stack must be rewritten.
 
 ## Agent-Building Frameworks
 
@@ -420,7 +421,7 @@ Production case studies and engineering write-ups from companies running Martech
 
 Long-form analyses written for this repository.
 
-- [Three Tiers of Marketing Agents — and the Fourth Player Most Frameworks Miss](think/three-tier-marketing-agents.md) — The four-tier framework, the buyer-side vs supply-side 2×2 map, why programmatic infrastructure is the most profitable layer, and the Chinese-vs-US ecosystem asymmetry.
+- [Four Classes of Marketing Agents](think/marketing-agent-classes.md) — A categorical taxonomy (Platform-Owned / Independent / Conversational / Agent-Mediated) replacing the linear-tier framing. Covers the 1a/1b walled-garden vs aggregator-network split, why Class 1b is the most profitable corner, and the Chinese-vs-US ecosystem asymmetry.
 - [The Five Layers as a Cognitive Cycle](think/five-layers-cognitive-cycle.md) — How Data, Intelligence, Decision, Activation, and Measurement decompose the Martech AI feedback loop into independently optimizable stages, and what gets broken when layer boundaries collapse. ([中文版 / Chinese version](think/five-layers-cognitive-cycle.zh.md))
 
 ## Books

@@ -89,4 +89,4 @@ Each layer has its own domain experts, its own KPIs, and its own failure modes. 
 
 ---
 
-*Companion to [`three-tier-marketing-agents.md`](three-tier-marketing-agents.md). Both essays inform the Cross-Layer Domain Views table in the [main README](../README.md).*
+*Companion to [`marketing-agent-classes.md`](marketing-agent-classes.md). Both essays inform the structural decisions in the [main README](../README.md).*
