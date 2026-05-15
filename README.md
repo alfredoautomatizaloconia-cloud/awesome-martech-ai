@@ -421,6 +421,7 @@ Production case studies and engineering write-ups from companies running Martech
 Long-form analyses written for this repository.
 
 - [Three Tiers of Marketing Agents — and the Fourth Player Most Frameworks Miss](think/three-tier-marketing-agents.md) — The four-tier framework, the buyer-side vs supply-side 2×2 map, why programmatic infrastructure is the most profitable layer, and the Chinese-vs-US ecosystem asymmetry.
+- [The Five Layers as a Cognitive Cycle](think/five-layers-cognitive-cycle.md) — How Data, Intelligence, Decision, Activation, and Measurement decompose the Martech AI feedback loop into independently optimizable stages, and what gets broken when layer boundaries collapse. ([中文版 / Chinese version](think/five-layers-cognitive-cycle.zh.md))
 
 ## Books
 
