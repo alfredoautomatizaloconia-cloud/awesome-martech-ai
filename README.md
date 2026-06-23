@@ -392,6 +392,7 @@ Most Class 1 and Class 2 systems are built on traditional ML (gradient boosting,
 - [Claude Agent SDK](https://docs.anthropic.com/en/docs/agents-and-tools/agent-sdk) — Anthropic's SDK for building tool-using agents; well-suited to strategy reasoning and creative chains.
 - [OpenAI Assistants and Responses API](https://platform.openai.com/docs/assistants/overview) — Default for prototyping marketing agents on the GPT stack.
 - [CrewAI](https://github.com/crewAIInc/crewAI) — Multi-agent role-based orchestration framework.
+- [NotFair](https://github.com/nowork-studio/NotFair) — Open-source Claude Code skills and MCP servers that give agents direct control of the ad and measurement stack: Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP; ~2.9k★ on GitHub.
 
 ## Frontier (2025/2026)
 
