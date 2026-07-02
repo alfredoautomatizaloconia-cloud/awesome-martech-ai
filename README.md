@@ -360,6 +360,7 @@ LLM-native agents operating in the post-click conversation: customer support, sa
 - [Ada](https://www.ada.cx/) — Customer service automation; early LLM-native pivot in the category.
 - [Cognigy](https://www.cognigy.com/) — Enterprise conversational AI platform for contact centers; strong European enterprise traction.
 - [Parloa](https://www.parloa.com/) — European conversational AI for contact centers.
+- [Hermes](https://www.buildwithhermes.com/) — Operating platform for agencies deploying AI voice agents for sales and service calls; multi-tenant workspaces, native CRM, campaign orchestration, and usage-based billing under the agency's own brand.
 
 ### Class 4 — Agent-Mediated Discovery (Frontier)
 
