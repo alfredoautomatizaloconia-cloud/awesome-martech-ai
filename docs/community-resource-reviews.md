@@ -1,0 +1,12 @@
+# Community Resource Reviews
+
+Checked 2026-09-30. These reviews examine public first-party material for catalog inclusion. They do not test connected accounts, certify production controls or establish business effects. Review dates apply to the claims below, not the entire product.
+
+## NotFair Plugin
+
+Suggested by Yuting Zhong in [PR #2](https://github.com/leoncuhk/awesome-martech-ai/pull/2). The former `nowork-studio/NotFair` URL redirects to `nowork-studio/notfair-plugin`.
+
+- Evidence: the [repository README](https://github.com/nowork-studio/notfair-plugin/blob/5094263b522165647789e9594406bb3ce096c5fe/README.md), [MIT license](https://github.com/nowork-studio/notfair-plugin/blob/5094263b522165647789e9594406bb3ce096c5fe/LICENSE) and [MCP configuration](https://github.com/nowork-studio/notfair-plugin/blob/5094263b522165647789e9594406bb3ce096c5fe/.mcp.json), revision `5094263` dated 2026-09-25.
+- Supported scope: public skill files describe advertising, GA4 and Search Console workflows. Live account operations use one vendor-hosted OAuth connection; platform access depends on connected accounts and exposed capabilities.
+- Placement: agent-building inputs and tool integrations, rather than a general orchestration engine. The public skill repository is distinct from the hosted service.
+- Limits: no connected-account reproduction, independent effect estimate or security certification. Star counts and an implication that all MCP/backend implementations are open source were removed.

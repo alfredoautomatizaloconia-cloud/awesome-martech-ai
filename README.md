@@ -431,7 +431,7 @@ Context-heavy strategy, creative iteration and tool-mediated customer work are p
 - [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk/overview) — Anthropic's SDK for tool-using agents; choose permissions and evaluations for the intended workflow.
 - [OpenAI Responses API](https://developers.openai.com/api/docs/guides/migrate-to-responses) — Current agent/tool integration entry point, with Conversations for persistent state; Assistants API sunset 2026-08-26 per the [official migration guide](https://developers.openai.com/api/docs/assistants/migration). Reviewed 2026-09-30.
 - [CrewAI](https://github.com/crewAIInc/crewAI) — Multi-agent role-based orchestration framework.
-- [NotFair](https://github.com/nowork-studio/NotFair) — Open-source Claude Code skills and MCP servers that give agents direct control of the ad and measurement stack: Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP; ~2.9k★ on GitHub.
+- [NotFair Plugin](https://github.com/nowork-studio/notfair-plugin) — MIT-licensed marketing skills for ads, GA4 and Search Console; live account operations depend on an OAuth-connected hosted MCP. Skills/tool integration reference, with unverified business effects; [source review](docs/community-resource-reviews.md#notfair-plugin), 2026-09-30.
 
 ## Frontier (2025/2026)
 
